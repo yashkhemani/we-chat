@@ -1,18 +1,18 @@
 // creation of server
 const express = require("express");
 const dotenv = require("dotenv");
-const { chats } = require("../backend/data/data");
-const connectDB = require("../backend/config/db");
+const { chats } = require("../src/backend/data/data");
+const connectDB = require("../src/backend/config/db");
 const colors = require("colors");
-const userRoutes = require("../backend/routes/userRoutes");
-const chatRoutes = require("../backend/routes/chatRoutes");
-const messageRoutes = require("../backend/routes/messageRoutes");
+const userRoutes = require("../src/backend/routes/userRoutes");
+const chatRoutes = require("../src/backend/routes/chatRoutes");
+const messageRoutes = require("../src/backend/routes/messageRoutes");
 const path = require("path");
 
 const {
   notFound,
   errorHandler,
-} = require("../backend/middlewares/errorMiddleware");
+} = require("../src/backend/middlewares/errorMiddleware");
 
 require("dotenv").config();
 
